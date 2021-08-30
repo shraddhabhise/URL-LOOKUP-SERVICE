@@ -42,3 +42,10 @@ sql.py
 /templates directory
  
  - this folder contains the views to display the corresponding messages and UI interfaces.
+ 
+ 
+ Future scope:
+ 1. convert it to containerized application
+ 2. scale it for more users and urls
+ 3. set proper admin priviledges to add and list the malware urls. So that users cannot access it.
+ 
