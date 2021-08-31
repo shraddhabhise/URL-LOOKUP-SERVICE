@@ -43,9 +43,23 @@ sql.py
  
  - this folder contains the views to display the corresponding messages and UI interfaces.
  
+ To Run:
+ 1. git clone <repository>
+ 2. install requirements.txt
+ 3. run the app by using: python3 app.py
+ 4. Hit the url where the flask is hosting the app after running
+ 5. /checkurl : will give you a give to enter your url. Please enter the url in the format https/http://<hostname> e.g (https://google.com). According to if the  the url has malware or if it is safe, the message will be displayed accordingly to the user.
+ 
+ Admin can run:
+ 6. /list
+ to list the existing malware urls in the "malwarehosts" table
+ 7. /addmalware
+ to add a url that is detected as a malware to the table malwarehosts
+      
+ Database used: sqllite3
+ Flask Framework: 2.0.1
  
  Future scope:
  1. convert it to containerized application
  2. scale it for more users and urls
  3. set proper admin priviledges to add and list the malware urls. So that users cannot access it.
- 
